@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lobster+Two:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kloss - Открытие кейса</title>
+</head>
+<body class="body_case_open">
+    <header class="header_case_open">
+        <div class="container"> 
+            <div class="header_inner_case_open">
+                <!-- Деньги в левом углу -->
+                <div class="user_balance">22,222 RUB</div>
+                
+                <!-- Кнопка возврата в правом углу -->
+                <a href="case.html" class="back_btn">← Назад к кейсам</a>
+            </div>
+        </div>
+    </header>
+
+    <div class="page-content">
+        <div class="container">
+            <h1 class="case_title">Легендарный кейс</h1>
+            
+            <div class="case_layout">
+                <!-- ВЕРХ: Анимация прокрутки -->
+                <div class="animation_section">
+                    <div class="animation_window">
+                        <div class="items_scroll" id="itemsScroll">
+                            <div class="scroll_item"><img src="img/case5.1.webp"alt=""></div>
+                            <div class="scroll_item"><img src="img/case5.2.webp" alt=""></div>
+                            <div class="scroll_item"><img src="img/case5.3.webp" alt=""></div>
+                            <div class="scroll_item"><img src="img/case5.4.webp" alt=""></div>
+                            <div class="scroll_item"><img src="img/case5.5.webp" alt=""></div>
+                            <div class="scroll_item"><img src="img/case5.6.webp" alt=""></div>
+                            <div class="scroll_item"><img src="img/case5.2.webp" alt=""></div>
+                            <div class="scroll_item"><img src="img/case5.1.webp" alt=""></div>
+                        </div>
+                    </div>
+                    
+                    <!-- Кнопка открытия -->
+                    <button class="open_btn" id="openBtn">Открыть за 299 RUB</button>
+                    
+                    <!-- Шансы выпадения -->
+                    <div class="chances_section">
+                        <div class="chance_item common">
+                            <div class="chance_percent">40%</div>
+                            <div class="chance_bar">
+                                <div class="chance_fill"></div>
+                            </div>
+                            <div class="chance_name">Обычный</div>
+                        </div>
+                        <div class="chance_item uncommon">
+                            <div class="chance_percent">25%</div>
+                            <div class="chance_bar">
+                                <div class="chance_fill"></div>
+                            </div>
+                            <div class="chance_name">Необычный</div>
+                        </div>
+                        <div class="chance_item rare">
+                            <div class="chance_percent">15%</div>
+                            <div class="chance_bar">
+                                <div class="chance_fill"></div>
+                            </div>
+                            <div class="chance_name">Редкий</div>
+                        </div>
+                        <div class="chance_item mythical">
+                            <div class="chance_percent">10%</div>
+                            <div class="chance_bar">
+                                <div class="chance_fill"></div>
+                            </div>
+                            <div class="chance_name">Мифический</div>
+                        </div>
+                        <div class="chance_item legendary">
+                            <div class="chance_percent">7%</div>
+                            <div class="chance_bar">
+                                <div class="chance_fill"></div>
+                            </div>
+                            <div class="chance_name">Легендарный</div>
+                        </div>
+                        <div class="chance_item immortal">
+                            <div class="chance_percent">3%</div>
+                            <div class="chance_bar">
+                                <div class="chance_fill"></div>
+                            </div>
+                            <div class="chance_name">Бессмертный</div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- НИЗ: Предметы кейса -->
+                <div class="items_section">
+                    <div class="case_items">
+                        <div class="case_item common">
+                            <img src="img/case5.1.webp" alt="Обычный скин">
+                            <div class="item_name">Обычный скин</div>
+                            <div class="item_rarity">Обычный</div>
+                        </div>
+                        <div class="case_item uncommon">
+                            <img src="img/case5.2.webp" alt="Необычный скин">
+                            <div class="item_name">Необычный скин</div>
+                            <div class="item_rarity">Необычный</div>
+                        </div>
+                        <div class="case_item rare">
+                            <img src="img/case5.3.webp" alt="Редкий скин">
+                            <div class="item_name">Редкий скин</div>
+                            <div class="item_rarity">Редкий</div>
+                        </div>
+                        <div class="case_item mythical">
+                            <img src="img/case5.4.webp" alt="Мифический скин">
+                            <div class="item_name">Мифический скин</div>
+                            <div class="item_rarity">Мифический</div>
+                        </div>
+                        <div class="case_item legendary">
+                            <img src="img/case5.5.webp" alt="Легендарный скин">
+                            <div class="item_name">Легендарный скин</div>
+                            <div class="item_rarity">Легендарный</div>
+                        </div>
+                        <div class="case_item immortal">
+                            <img src="img/case5.6.webp" alt="Бессмертный скин">
+                            <div class="item_name">Бессмертный скин</div>
+                            <div class="item_rarity">Бессмертный</div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Результат открытия -->
+                <div class="result_section" id="resultSection">
+                    <h3 style="color: #ffd700; margin-bottom: 20px;">Поздравляем! Вы выиграли:</h3>
+                    <div class="result_item">
+                        <img src="" alt="" id="resultImage">
+                        <div class="result_name" id="resultName"></div>
+                        <div class="result_rarity" id="resultRarity"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer_inner">
+                <div class="footer_block">
+                    <h4 class="footer_title">Location</h4>
+                    <address class="footer_adress">
+                        <div>г Москва район, Балашиха</div>
+                        <div>улица Пушкина, дом Колотушкина</div>
+                    </address>
+                </div>
+                <div class="footer_block">
+                    <h4 class="footer_title">Social</h4>
+                    <div class="social">
+                        <a class="social_item" href="#"><img src="img/yt.png" alt="YouTube" height="18"></a>
+                        <a class="social_item" href="#"><img src="img/tw.png" alt="Twitter" height="18"></a>
+                        <a class="social_item" href="#"><img src="img/ig.png" alt="Instagram" height="18"></a>
+                    </div>
+                </div>
+                <div class="footer_block">
+                    <h4 class="footer_title">More Info</h4>
+                    <div class="footer_text">
+                        <p>The site was written by 1 person while he was sick with a cold during the holidays. All the characters used on the site are fictional, and the coincidences are random. Don't be fooled if someone tells you that the skins will be removed. Everything on the site is done for entertainment purposes.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer_copyright">
+            <div class="container">
+                <div class="text_copyright">
+                    It's all done in the name of a joke
+                    <div>Made with Y <span>by NesQuchai</span><img src="img/h.png" alt="Heart"></div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        const openBtn = document.getElementById('openBtn');
+        const itemsScroll = document.getElementById('itemsScroll');
+        const resultSection = document.getElementById('resultSection');
+        const resultImage = document.getElementById('resultImage');
+        const resultName = document.getElementById('resultName');
+        const resultRarity = document.getElementById('resultRarity');
+
+        // Предметы для выпадения с их шансами
+        const items = [
+            { img: 'img/case5.1.webp', name: 'Обычный скин', rarity: 'Обычный', chance: 40 },
+            { img: 'img/case5.2.webp', name: 'Необычный скин', rarity: 'Необычный', chance: 25 },
+            { img: 'img/case5.3.webp', name: 'Редкий скин', rarity: 'Редкий', chance: 15 },
+            { img: 'img/case5.4.webp', name: 'Мифический скин', rarity: 'Мифический', chance: 10 },
+            { img: 'img/case5.5.webp', name: 'Легендарный скин', rarity: 'Легендарный', chance: 7 },
+            { img: 'img/case5.6.webp', name: 'Бессмертный скин', rarity: 'Бессмертный', chance: 3 }
+        ];
+
+        openBtn.addEventListener('click', function() {
+            // Блокируем кнопку на время анимации
+            openBtn.disabled = true;
+            openBtn.textContent = 'Открывается...';
+            
+            // Сбрасываем анимацию
+            itemsScroll.style.transition = 'none';
+            itemsScroll.style.transform = 'translateX(0)';
+            
+            // Даем время для сброса
+            setTimeout(() => {
+                // Запускаем анимацию прокрутки
+                itemsScroll.style.transition = 'transform 4s cubic-bezier(0.1, 0.7, 0.1, 1)';
+                
+                // Выбираем случайный предмет с учетом шансов
+                const randomItem = getRandomItem();
+                
+                // Вычисляем позицию для остановки (примерно в середине списка)
+                const itemWidth = 200; // Ширина одного предмета
+                const targetPosition = -(itemWidth * 4 + itemWidth / 2); // Останавливаемся на 4.5 предмете
+                
+                itemsScroll.style.transform = `translateX(${targetPosition}px)`;
+                
+                // Показываем результат после анимации
+                setTimeout(() => {
+                    showResult(randomItem);
+                    openBtn.disabled = false;
+                    openBtn.textContent = 'Открыть еще за 299 RUB';
+                }, 4000);
+                
+            }, 50);
+        });
+
+        function getRandomItem() {
+            const random = Math.random() * 100;
+            let currentChance = 0;
+            
+            for (const item of items) {
+                currentChance += item.chance;
+                if (random <= currentChance) {
+                    return item;
+                }
+            }
+            
+            return items[items.length - 1]; // fallback
+        }
+
+        function showResult(item) {
+            resultImage.src = item.img;
+            resultImage.alt = item.name;
+            resultName.textContent = item.name;
+            resultRarity.textContent = item.rarity;
+            resultSection.style.display = 'block';
+            
+            // Прокручиваем к результату
+            resultSection.scrollIntoView({ behavior: 'smooth' });
+        }
+    </script>
+</body>
+</html>
